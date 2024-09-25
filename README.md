@@ -52,6 +52,38 @@ Created REST API for colleges management. Fetching colleges based on the courses
         }
     ]
     ```
+  ### Fetch by course Name Colleges
+
+- **URL**: `GET (http://localhost:8080/colleges/fetch-By-courseName/java)`
+- **Response Body**:
+    ```json
+   [
+    {
+        "collegeId": "cee8ee17-b4bc-44ab-bc32-621d725d6e94",
+        "collegeName": "Bvrit",
+        "courseName": "*java*",
+        "courseDuration": "2 months",
+        "accomodation": "AC",
+        "accomodationFee": 200,
+        "courseFee": {
+            "courseFee_id": "db3c3806-d9c1-48d9-8341-0d936cc8fd33",
+            "fees": 3000
+        }
+    },
+    {
+        "collegeId": "f20d3277-c81b-43d5-8a95-1750b97a295b",
+        "collegeName": "Bvrit",
+        "courseName": "*java*",
+        "courseDuration": "2.5 months",
+        "accomodation": "non-AC",
+        "accomodationFee": 321,
+        "courseFee": {
+            "courseFee_id": "10898072-521d-409f-910b-8aa995713d3b",
+            "fees": 6000
+        }
+    }
+]
+    ```
 
 ## Entities
 
